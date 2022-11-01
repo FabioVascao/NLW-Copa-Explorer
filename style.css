@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #121214;
+  background-image: url(assets/bg.svg);
+  background-position-x: center;
+  background-position-y: 55.6%;
+}
+#app {
+  margin: 5.2rem auto;
+  height: fit-content;
+  width: fit-content;
+}
+header {
+  margin-bottom: 6.3rem;
+}
+main {
+  
+}
+.card {
+  padding: 3.2rem 2.3rem;
+  text-align: center;
+  background: #1D1C19;
+  border-bottom: .2px solid #f7dd43;
+  border-radius: .6rem;
+}
+ul {
+  list-style: none;
+}
+.card h2 {
+  padding: .8rem 1.6rem;
+  border: 1px solid #746615;
+  border-radius: .6rem;
+}
