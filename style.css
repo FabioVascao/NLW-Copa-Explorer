@@ -8,6 +8,7 @@
 }
 body {
   font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
   background-color: #121214;
   background-image: url(assets/bg.svg);
   background-position-x: center;
@@ -21,9 +22,6 @@ body {
 header {
   margin-bottom: 6.3rem;
 }
-main {
-  
-}
 .card {
   padding: 3.2rem 2.3rem;
   text-align: center;
@@ -31,11 +29,43 @@ main {
   border-bottom: .2px solid #f7dd43;
   border-radius: .6rem;
 }
-ul {
-  list-style: none;
-}
 .card h2 {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  margin: auto;
+  margin-bottom: 5.3rem;
   padding: .8rem 1.6rem;
   border: 1px solid #746615;
   border-radius: .6rem;
+  color: #f7dd43;
+}
+.card h2 span {
+  color: #e1e1e6;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 27rem;
+}
+.card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card ul li + li {
+  padding-top: 2.4rem;
+  border-top: 1px solid #323238;
+}
+.card ul li strong {
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 125%;
+  color: #e1e1e6;
 }
