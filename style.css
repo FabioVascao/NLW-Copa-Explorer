@@ -5,17 +5,22 @@
 }
 :root {
   font-size: 62.5%;
+  --card-color-primary: #f7dd43;
+  --card-title-border-color: #746615;
+  --bg-body: #121214;
+  --bg-card: #1D1C19;
+  --span-color: #e1e1e6;
 }
 body {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
-  background-color: #121214;
+  background-color: var(--bg-body);
   background-image: url(assets/bg.svg);
-  background-position-x: center;
-  background-position-y: -71.5rem;
+  background-position: top-center;
 }
 #app {
-  margin: 5.2rem auto;
+  padding-top: 5.2rem;
+  margin: auto;
   height: fit-content;
   width: fit-content;
 }
@@ -26,8 +31,8 @@ header {
 .card {
   padding: 3.2rem 2.3rem;
   text-align: center;
-  background: #1D1C19;
-  border-bottom: .2px solid #f7dd43;
+  background: var(--bg-card);
+  border-bottom: .2px solid var(--card-color-primary);
   border-radius: .6rem;
 }
 .card h2 {
@@ -39,12 +44,12 @@ header {
   margin: auto;
   margin-bottom: 5.3rem;
   padding: .8rem 1.6rem;
-  border: 1px solid #746615;
+  border: 1px solid var(--card-title-border-color);
   border-radius: .6rem;
   color: #f7dd43;
 }
 .card h2 span {
-  color: #e1e1e6;
+  color: var(--span-color);
   font-size: 1.4rem;
   text-transform: uppercase;
 }
@@ -68,10 +73,40 @@ header {
   font-size: 3.6rem;
   font-weight: 900;
   line-height: 125%;
-  color: #e1e1e6;
+  color: var(--span-color);
 }
 #cards {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+}
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+  transform: scale(1.1);
+}
+.card h2,
+.card ul li strong,
+.card ul li img {
+  transition: transform 0.3s;
+}
+.card {
+  opacity: 0;
+  animation: appear .2s forwards;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 700px) {
+  #cards {
+    max-width: 67rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
