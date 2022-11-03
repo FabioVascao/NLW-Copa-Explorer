@@ -14,9 +14,7 @@
 body {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
-  background-color: var(--bg-body);
-  background-image: url(assets/bg.svg);
-  background-position: top-center;
+  background: var(--bg-body) url(assets/bg.svg) no-repeat top center/cover;
 }
 #app {
   padding-top: 5.2rem;
