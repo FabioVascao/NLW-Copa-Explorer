@@ -70,3 +70,8 @@ header {
   line-height: 125%;
   color: #e1e1e6;
 }
+#cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
