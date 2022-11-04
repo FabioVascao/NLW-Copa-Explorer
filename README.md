@@ -9,7 +9,7 @@
 
 Projeto construído do evento Next Level Week da Rocketseat.
 
-[🔗 Clique aqui para acessar](https://github.com/FabioVascao/NLW-Copa-Explorer)
+[🔗 Clique aqui para acessar](https://fabiovascao.github.io/NLW-Copa-Explorer/)
 
 
 ## 🛠 Tecnologias
